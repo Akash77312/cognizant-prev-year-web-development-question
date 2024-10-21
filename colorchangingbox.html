@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        margin: 30px 200px;
+        padding: 5px;
+    }
+    .txt{
+        padding: 5px;
+    }
+    .box-color{
+        height: 150px;
+        width:  150px;
+        border-radius: 5px;
+        background-color: aqua;
+    }
+    .button{
+        padding: 5px;
+        border-radius: 2px;
+    }
+    #red{
+        color: white;
+        background-color: red;
+    }
+    #green{
+        color: white;
+        background-color: green;
+    }
+    #blue{
+        color: white;
+        background-color: blue;
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded",function(){
+        var colorBox = document.getElementById("box-color");
+        var redbutton = document.getElementById("red");
+        var greenbutton = document.getElementById("green");
+        var bluebutton = document.getElementById("blue");
+
+        redbutton.addEventListener("click",function(){
+            colorBox.style.backgroundColor = "red"; 
+        })
+        greenbutton.addEventListener("click",function(){
+            colorBox.style.backgroundColor = "green";
+        })
+        bluebutton.addEventListener("click",function(){
+            colorBox.style.backgroundColor = "blue";
+        });
+    });
+</script>
+<body>
+    <div class="main">
+        <div class="txt">color changing box</div>
+        <div class="box-color" id="box-color"></div>
+        <div class=" button">
+            <button id="red">red</button>
+            <button id="green">green</button>
+            <button id="blue">blue</button>
+        </div>
+    </div>
+</body>
+</html>

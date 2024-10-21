@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animal Images</title>
+<style>
+.animal-image {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.animal-image.active {
+    border: 2px solid green;
+}
+</style>
+<script>
+function toggleActive(image) {
+    image.classList.toggle('active');
+}
+</script>
+</head>
+<body>
+<h2>Animal Images</h2>
+<div>
+    <label for="tiger-image">Tiger:</label>
+    <img id="tiger-image" class="animal-image" src="https://mettl.com/uploads/482135/8e9c5fe8-bd43-4a4d-9776-839b3a6abff6.jpg" alt="Tiger" onclick="toggleActive(this)">
+</div>
+<div>
+    <label for="lion-image">Lion:</label>
+    <img id="lion-image" class="animal-image" src="https://mettl.com/uploads/482135/6c4199e6-6e74-4af6-bc74-306c3aba036d.jpg" alt="Lion" onclick="toggleActive(this)">
+</div>
+</body>
+</html>
